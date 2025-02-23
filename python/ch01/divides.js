@@ -34,11 +34,7 @@ function divides(a, b) {
     function convert(s) {
         let m = Number(s);
 
-        if (isValid(m)) {
-            return Math.floor(m);
-        } else {
-            return NaN;
-        }
+        return isValid(m) ? m : NaN;
     }
     
     let m = convert(a);
